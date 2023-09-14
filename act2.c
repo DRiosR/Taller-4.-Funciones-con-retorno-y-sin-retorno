@@ -31,12 +31,12 @@ inicio:
 
 int calcularFactorial(int a)
 {
-    int i, fac;
-    fac = a;
-    for (i = 1; i < a; i++)
+    if(a==0)
     {
-        fac = fac * i;
+        return 1;
     }
-
-    return fac;
+    else
+    {
+        return a*calcularFactorial(a-1);
+    }
 }
